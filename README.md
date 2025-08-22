@@ -8,7 +8,7 @@ Encode or decode URI/URL strings directly in the editor. Works on selections or 
 - **Clipboard Helpers** — Encode or decode the clipboard in place.
 - Context menu items in the editor and handy default keybindings.
 
-![Encode and Decode URI](media/demo.gif)
+![Encode and Decode URI](https://github.com/kedarvijaykulkarni/vscode-uri-tools/blob/master/media/demo.gif)
 
 ## Commands
 - `URI Tools: Encode Selection` (`uri-tools.encodeSelection`)

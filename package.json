@@ -1,9 +1,9 @@
 {
   "name": "uri-tools",
-  "displayName": "URI Encode/Decode",
+  "displayName": "Kedar:URI Encode/Decode",
   "description": "Fast, reliable URI/URL encode & decode utilities for selections or entire files. Includes commands, keybindings, and context menu actions.",
   "version": "1.0.0",
-  "publisher": "your-publisher-id",
+  "publisher": "kedar",
   "license": "MIT",
   "engines": {
     "vscode": "^1.84.0"
@@ -139,10 +139,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://example.com/your-repo.git"
+    "url": "https://kedarvijaykulkarni/vscode-uri-tools.git"
   },
   "bugs": {
-    "url": "https://example.com/your-repo/issues"
+    "url": "https://kedarvijaykulkarni/vscode-uri-tools/issues"
   },
-  "homepage": "https://example.com/your-repo#readme"
+  "homepage": "https://kedarvijaykulkarni/vscode-uri-tools#readme"
 }

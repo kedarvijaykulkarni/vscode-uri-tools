@@ -2,7 +2,7 @@
   "name": "uri-tools",
   "displayName": "Kedar:URI Encode/Decode",
   "description": "Fast, reliable URI/URL encode & decode utilities for selections or entire files. Includes commands, keybindings, and context menu actions.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "kedar",
   "license": "MIT",
   "engines": {

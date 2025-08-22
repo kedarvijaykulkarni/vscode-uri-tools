@@ -1,0 +1,148 @@
+{
+  "name": "uri-tools",
+  "displayName": "URI Encode/Decode",
+  "description": "Fast, reliable URI/URL encode & decode utilities for selections or entire files. Includes commands, keybindings, and context menu actions.",
+  "version": "1.0.0",
+  "publisher": "your-publisher-id",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "galleryBanner": {
+    "color": "#0f172a",
+    "theme": "dark"
+  },
+  "icon": "media/icon.png",
+  "activationEvents": [
+    "onCommand:uri-tools.encodeSelection",
+    "onCommand:uri-tools.decodeSelection",
+    "onCommand:uri-tools.encodeDocument",
+    "onCommand:uri-tools.decodeDocument",
+    "onCommand:uri-tools.encodeClipboard",
+    "onCommand:uri-tools.decodeClipboard"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "uri-tools.encodeSelection",
+        "title": "URI Tools: Encode Selection",
+        "category": "URI Tools"
+      },
+      {
+        "command": "uri-tools.decodeSelection",
+        "title": "URI Tools: Decode Selection",
+        "category": "URI Tools"
+      },
+      {
+        "command": "uri-tools.encodeDocument",
+        "title": "URI Tools: Encode Entire Document",
+        "category": "URI Tools"
+      },
+      {
+        "command": "uri-tools.decodeDocument",
+        "title": "URI Tools: Decode Entire Document",
+        "category": "URI Tools"
+      },
+      {
+        "command": "uri-tools.encodeClipboard",
+        "title": "URI Tools: Encode Clipboard",
+        "category": "URI Tools"
+      },
+      {
+        "command": "uri-tools.decodeClipboard",
+        "title": "URI Tools: Decode Clipboard",
+        "category": "URI Tools"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "uri-tools.encodeSelection",
+        "key": "ctrl+alt+u ctrl+e",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "uri-tools.decodeSelection",
+        "key": "ctrl+alt+u ctrl+d",
+        "when": "editorTextFocus"
+      },
+      {
+        "command": "uri-tools.encodeDocument",
+        "key": "ctrl+alt+u e",
+        "when": "editorTextFocus && !editorHasSelection"
+      },
+      {
+        "command": "uri-tools.decodeDocument",
+        "key": "ctrl+alt+u d",
+        "when": "editorTextFocus && !editorHasSelection"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "uri-tools.encodeSelection",
+          "group": "navigation@5",
+          "when": "editorHasSelection"
+        },
+        {
+          "command": "uri-tools.decodeSelection",
+          "group": "navigation@6",
+          "when": "editorHasSelection"
+        },
+        {
+          "command": "uri-tools.encodeDocument",
+          "group": "navigation@7",
+          "when": "!editorHasSelection"
+        },
+        {
+          "command": "uri-tools.decodeDocument",
+          "group": "navigation@8",
+          "when": "!editorHasSelection"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "uri-tools.encodeSelection"
+        },
+        {
+          "command": "uri-tools.decodeSelection"
+        },
+        {
+          "command": "uri-tools.encodeDocument"
+        },
+        {
+          "command": "uri-tools.decodeDocument"
+        },
+        {
+          "command": "uri-tools.encodeClipboard"
+        },
+        {
+          "command": "uri-tools.decodeClipboard"
+        }
+      ]
+    }
+  },
+  "main": "./out/extension.js",
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -w -p ./",
+    "package": "vsce package",
+    "publish": "vsce publish"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.84.0",
+    "typescript": "^5.5.4",
+    "vsce": "^2.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://example.com/your-repo.git"
+  },
+  "bugs": {
+    "url": "https://example.com/your-repo/issues"
+  },
+  "homepage": "https://example.com/your-repo#readme"
+}

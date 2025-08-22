@@ -1,0 +1,9 @@
+.vscode/**
+.vscode-test/**
+.git/**
+.gitignore
+**/*.map
+**/*.ts
+.DS_Store
+.github/**
+.env
